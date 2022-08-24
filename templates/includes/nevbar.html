@@ -1,4 +1,4 @@
-        
+
         <!-- header-bottom-area Start -->
         <div class="header-bottom-area header-sticky">
             <div class="container">
@@ -9,7 +9,8 @@
                             <div class="main-menu">
                                 <nav class="main-navigation">
                                     <ul>
-                                        <li class="active"><a href="{% url 'home' %}">HOME</a>
+                                        {% with url_name=request.resolver_match.url_name %}
+                                        <li class="{% if url_name == 'home' %}active{% endif %}"><a href="{% url 'home' %}">HOME</a>
                                             {% comment %} <ul class="sub-menu">
                                                 <li><a href="index.html">Home Page 1</a></li>
                                                 <li><a href="index-2.html">Home Page 2</a></li>
@@ -17,19 +18,19 @@
                                                 <li><a href="index-2-box.html">Home Box Layout 2</a></li>
                                             </ul> {% endcomment %}
                                         </li>
-                                        <li><a href="{% url 'about-us' %}">ABOUT US</a>
+                                        <li class="{% if url_name == 'about-us' %}active{% endif %}"><a href="{% url 'about-us' %}">ABOUT US</a>
                                             {% comment %} <ul class="sub-menu">
                                                 <li><a href="about-box.html">About Box Page</a></li>
                                             </ul> {% endcomment %}
                                         </li>
-                                        <li><a href="{% url 'services' %}">SERVICES</a>
+                                        <li class="{% if url_name == 'services' %}active{% endif %}"><a href="{% url 'services' %}">SERVICES</a>
                                             {% comment %} <ul class="sub-menu">
                                                 <li><a href="services-box.html">Services Box Page</a></li>
                                                 <li><a href="single-services.html">Single Services</a></li>
                                                 <li><a href="single-services-box.html">Single Services Box</a></li>
                                             </ul> {% endcomment %}
                                         </li>
-                                        <li><a href="{% url 'team' %}">TEAM</a>
+                                        <li class="{% if url_name == 'team' %}active{% endif %}"><a href="{% url 'team' %}">TEAM</a>
                                             {% comment %} <ul class="sub-menu">
                                                 <li><a href="team-box.html">Team Box Page</a></li>
                                             </ul> {% endcomment %}
@@ -48,11 +49,12 @@
                                                 <li><a href="blog-details-left-sidebar-box.html">Blog Box Details Left Sidebar</a></li>
                                             </ul>
                                         </li> {% endcomment %}
-                                        <li><a href="{% url 'contect-us' %}">CONTACT</a>
+                                        <li class="{% if url_name == 'contect-us' %}active{% endif %}"><a href="{% url 'contect-us' %}">CONTACT</a>
                                             {% comment %} <ul class="sub-menu">
                                                 <li><a href="contact-box.html">Contact Box Page</a></li>
                                             </ul> {% endcomment %}
                                         </li>
+                                        {% endwith %}
                                     </ul>
                                 </nav>
                             </div>

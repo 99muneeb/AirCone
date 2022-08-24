@@ -12,7 +12,7 @@
                             <h1>Expert repair <br> AC & Heating services</h1>
                             <p>Inform, bring or send your ac, for a quick repair </p>
                             <div class="slider-button">
-                                <a href="#" class="default-btn border-radius">About More</a>
+                                <a href="{% url 'about-us' %}" class="default-btn border-radius">About More</a>
                             </div>
                         </div>
                     </div>
@@ -39,13 +39,13 @@
                 <div class="col-lg-4 col-md-6">
                     <!-- single-service Start -->
                     <div class="single-service mt--30 mb--30">
-                        <div class="service-image">
+                        <div class="service-image" style="height:240px; width: 370px">
                             <img src="{{service.ser_image.url}}" alt="">
                         </div>
                         <div class="service-content text-center">
                             <h3><a href="{% url 'single_service' %}">{{service.title}}</a></h3>
                             <p>{{service.description}}</p>
-                            <a href="{% url 'single_service' %}">READ MORE</a>
+                            <a href="{% url 'single_service'  %}">READ MORE</a>
                         </div>
                     </div>
                     <!-- single-service End -->
@@ -68,7 +68,7 @@
                         <p>It is a long established fact that a reader will be distracted by the readable to
                          content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,opposed using 'Con't here.</p>
                         <div class="make-apoinment-button">
-                            <a href="#" class="default-btn border-radius">Make Appointment</a>
+                            <a href="{% url 'Appointment' %}" class="default-btn border-radius">Make Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -183,8 +183,8 @@
                         <h2>Now Time For Something New</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
                         <div class="contact-us-button">
-                            <a href="#" class="default-btn border-radius">Know More</a> 
-                            <a href="#" class="primary-btn border-radius">Contact Us</a>
+                            <a href="{% url 'about-us' %}" class="default-btn border-radius">Know More</a>
+                            <a href="{% url 'contect-us' %}" class="primary-btn border-radius">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -192,103 +192,7 @@
         </div>
     </div>
     <!-- Something New Aera End -->
-    
-    <!-- Latest News Area Start -->
-    <div class="latest-blog-news section-pt section-pb-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h4>AIRCON NEWS</h4>
-                        <h2>Latest News</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row latest-blog-active">
-                <div class="col-lg-4">
-                    <!-- single-letest-blog Start -->
-                    <div class="single-letest-blog mt--30 mb--30">
-                        <div class="blog-image">
-                            <a href="blog-details.html"><img src="{% static 'images/blog/1.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="post-mata">
-                                <ul>
-                                    <li><a href="#">By  Admin</a></li>
-                                    <li>/</li>
-                                    <li>06 jun 2018</li>
-                                </ul>
-                            </div>
-                            <h3><a href="blog-details.html">Maintaince & Installation</a></h3>
-                            <p>long established fact that a reader will page when looking at its layout. </p>
-                        </div>
-                    </div>
-                    <!-- single-letest-blog End -->
-                </div>
-                <div class="col-lg-4">
-                    <!-- single-letest-blog Start -->
-                    <div class="single-letest-blog mt--30 mb--30">
-                        <div class="blog-image">
-                            <a href="blog-details.html"><img src="{% static 'images/blog/2.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="post-mata">
-                                <ul>
-                                    <li><a href="#">By  Admin</a></li>
-                                    <li>/</li>
-                                    <li>23 jun 2018</li>
-                                </ul>
-                            </div>
-                            <h3><a href="blog-details.html">A/C Installation</a></h3>
-                            <p>long established fact that a reader will page when looking at its layout. </p>
-                        </div>
-                    </div>
-                    <!-- single-letest-blog End -->
-                </div>
-                <div class="col-lg-4">
-                    <!-- single-letest-blog Start -->
-                    <div class="single-letest-blog mt--30 mb--30">
-                        <div class="blog-image">
-                            <a href="blog-details.html"><img src="{% static 'images/blog/3.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="post-mata">
-                                <ul>
-                                    <li><a href="#">By  Admin</a></li>
-                                    <li>/</li>
-                                    <li>30 jun 2018</li>
-                                </ul>
-                            </div>
-                            <h3><a href="blog-details.html">Optimization You AIR</a></h3>
-                            <p>long established fact that a reader will page when looking at its layout. </p>
-                        </div>
-                    </div>
-                    <!-- single-letest-blog End -->
-                </div>
-                <div class="col-lg-4">
-                    <!-- single-letest-blog Start -->
-                    <div class="single-letest-blog mt--30 mb--30">
-                        <div class="blog-image">
-                            <a href="blog-details.html"><img src="{% static 'images/blog/6.jpg' %}" alt=""></a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="post-mata">
-                                <ul>
-                                    <li><a href="#">By  Admin</a></li>
-                                    <li>/</li>
-                                    <li>30 jun 2018</li>
-                                </ul>
-                            </div>
-                            <h3><a href="blog-details.html">Cleaning & Optimization</a></h3>
-                            <p>long established fact that a reader will page when looking at its layout. </p>
-                        </div>
-                    </div>
-                    <!-- single-letest-blog End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Latest News Area End -->
+
 {% endblock content %}
 
 

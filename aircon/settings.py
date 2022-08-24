@@ -133,13 +133,13 @@ MEDIA_URL = '/media/'
 # CONTACT_EMAIL = 'contact@example.com'
 # ADMINS = (('Raphael','darkslider345@gmail.com'), ('Raphael','darkslider345@gmail.com'))
 
-DEFAULT_FROM_EMAIL = 'muneeb9166@gmail.com'
-SERVER_EMAIL = 'muneeb9166@gmail.com'
+# DEFAULT_FROM_EMAIL = 'muneeb9166@gmail.com'
+# SERVER_EMAIL = 'muneeb9166@gmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'muneeb9166@gmail.com'
-EMAIL_HOST_PASSWORD = '' # Place app password here
+EMAIL_HOST_USER = 'aircon968@gmail.com'
+EMAIL_HOST_PASSWORD = 'lqmgywvblnfrxobg' # Place app password here
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

@@ -39,8 +39,8 @@ class Appointment(models.Model):
     name = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)
     address = models.TextField()
-    data = models.DateField()
-    time = models.TimeField()
+    date = models.CharField(max_length=255)
+    time = models.CharField(max_length=255)
     message=models.TextField()
     datatime = models.DateTimeField(auto_now_add=True)
 
