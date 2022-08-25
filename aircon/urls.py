@@ -22,5 +22,4 @@ urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('', include('pages.urls')),
                   # path('Appointment/',include('appointment.urls')),
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT), +static(
-    document_root=settings.STATIC_ROOT)
+              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT.STATIC_ROOT)
