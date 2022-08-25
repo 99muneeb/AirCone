@@ -18,9 +18,8 @@ import os
 # load_dotenv()
 # from dotenv import load_dotenv
 # load_dotenv()
+from django.contrib import staticfiles
 from django.contrib.messages import constants as messages
-
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -127,8 +126,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, 'aircon/static'),
 # ]
-STATIC_ROOT=os.join(BASE_DIR,'staticfiles')
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
@@ -142,8 +140,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'aircon968@gmail.com'
-EMAIL_HOST_PASSWORD = 'lqmgywvblnfrxobg' # Place app password here
-
+EMAIL_HOST_PASSWORD = 'lqmgywvblnfrxobg'  # Place app password here
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
