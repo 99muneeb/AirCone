@@ -54,13 +54,13 @@ def Appointment(request):
 
             try:
                 msg = EmailMessage('Website Inquiry Appointment Details',
-                                   body, to=['muneeb9166@gmail.com', 'f19040015@orbit.edu.pk'])
+                                   body, to=['muneeb9166@gmail.com', 'tauseefksa43@gmail.com'])
                 msg.send()
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
 
             # Success message
-            messages.add_message(request, messages.SUCCESS, 'Contact details sent successfully!')
+            messages.add_message(request, messages.SUCCESS, 'Your Appointment details sent successfully!')
             return render(request, 'pages/success_message.html')
 
     form = AppointmentForm()
