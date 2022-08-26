@@ -49,7 +49,7 @@ def Appointment(request):
     if request.method == 'POST':
         form = AppointmentForm(request.POST)
         if form.is_valid():
-            body = f"name: {form.cleaned_data['name']}\nemail: {form.cleaned_data['email']}\naddress: {form.cleaned_data['address']}\ndate: {form.cleaned_data['email']}\ntime: {form.cleaned_data['time']}\nmessage: {form.cleaned_data['message']}"
+            body = f"name: {form.cleaned_data['name']}\nemail: {form.cleaned_data['email']}\naddress: {form.cleaned_data['address']}\ndate: {form.cleaned_data['date']}\ntime: {form.cleaned_data['time']}\nmessage: {form.cleaned_data['message']}"
             form.save()
 
             try:
@@ -76,7 +76,7 @@ def Contect_us(request):
 
             try:
                 msg = EmailMessage('Website Inquiry Contect Details',
-                                   body, to=['muneeb9166@gmail.com', 'f19040015@orbit.edu.pk'])
+                                   body, to=['muneeb9166@gmail.com', 'tauseefksa43@gmail.com'])
                 msg.send()
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
