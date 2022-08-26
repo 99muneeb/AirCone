@@ -45,6 +45,8 @@ def Teams(request):
     return render(request, 'pages/team.html', data)
 
 
+
+
 def Appointment(request):
     if request.method == 'POST':
         form = AppointmentForm(request.POST)

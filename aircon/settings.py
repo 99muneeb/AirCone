@@ -132,6 +132,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+
 # CONTACT_EMAIL = 'contact@example.com'
 # ADMINS = (('Raphael','darkslider345@gmail.com'), ('Raphael','darkslider345@gmail.com'))
 
