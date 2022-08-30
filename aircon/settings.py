@@ -12,14 +12,14 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-# import django_heroku
+
 # SENDGRID_API_KEY='<your-sendgrid-api-key>'
 
 # from dotenv import load_dotenv
 # load_dotenv()
 # from dotenv import load_dotenv
 # load_dotenv()
-from django.contrib import staticfiles
+# import django_heroku
 from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -34,11 +34,9 @@ SECRET_KEY = '#gwr0mf8%hf)si0bo5a%qq5c4r4azx224lva#$gh(fv%366*g3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']
 
 # Application definition
-
-
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
@@ -52,6 +50,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -126,16 +125,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATIC_URL = '/static/'
 
-STATIC_URL = 'static/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'aircon/static'),
+# ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
 
 # CONTACT_EMAIL = 'contact@example.com'
 # ADMINS = (('Raphael','darkslider345@gmail.com'), ('Raphael','darkslider345@gmail.com'))
@@ -161,5 +158,4 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 
-# activies django heroku
 # django_heroku.settings(locals())
