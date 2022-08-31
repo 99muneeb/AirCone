@@ -34,7 +34,7 @@ SECRET_KEY = '#gwr0mf8%hf)si0bo5a%qq5c4r4azx224lva#$gh(fv%366*g3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://acaircon.herokuapp.com/","127.0.0.1:8000/"]
 
 # Application definition
 
