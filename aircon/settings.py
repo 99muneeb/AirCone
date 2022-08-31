@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-# import django_heroku
+import django_heroku
 # SENDGRID_API_KEY='<your-sendgrid-api-key>'
 
 # from dotenv import load_dotenv
@@ -159,4 +159,4 @@ MESSAGE_TAGS = {
 }
 
 # activies django heroku
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
