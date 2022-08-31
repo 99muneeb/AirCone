@@ -160,3 +160,4 @@ MESSAGE_TAGS = {
 
 # activies django heroku
 django_heroku.settings(locals())
+
