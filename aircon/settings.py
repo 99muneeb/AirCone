@@ -150,6 +150,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # Message style
 from django.contrib.messages import constants as messages
 
+
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-secondary',
     messages.INFO: 'alert-info',
@@ -158,6 +159,5 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 
-# activies django heroku
+# activities django heroku
 django_heroku.settings(locals())
-
